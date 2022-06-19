@@ -1,5 +1,8 @@
-$(document).ready(() => {
-$('.backdrop').css('display', 'none');
+$(window).on('load', () => {
+  $('.backdrop').css('display', 'none');
+
+
+
 // Links
 
 $('.menu__link').click((e) => {

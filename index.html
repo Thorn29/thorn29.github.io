@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Developer - Thorn29</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@600;700&family=Marcellus&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <section id='welcome'>
+        <div class="welcome__center">
+          <div class="globe"></div>
+          <div class="welcome-box">
+            <div class="welcome-box__logo">
+              <img src="img/logo.png" alt="Thorn29">
+            </div>
+            <h5 class='welcome-box__subtitle'>Full stack web developer</h5>
+          </div>
+        </div>
+        <nav class='menu'>
+          <a href="#" class='menu__link' id='about-link'>About</a>
+          <a href="#" class='menu__link' id='skills-link'>Skills</a>
+          <a href="#" class='menu__link' id='projects-link'>Projects</a>
+          <a href="#" class='menu__link' id='contact-link'>Contact</a>
+        </nav>
+      </section>
+      <div class='content'>
+        <div class="backdrop">
+          <span class="loader"></span>
+        </div>
+        <section class='content-section' id='about'>
+          <p class='section__name'>About Me</p>
+          <div class="section__body">
+            <div class='about__container'>
+              <img class='about__image' src='img/about.jpg' alt='Web Development' />
+              <article class="about__article">
+                <h1 class='title'>My story</h1>
+                <p class='text'>My name is Marko Mutić, and I'm a web developer from Serbia with 4+ years of experience, comfortable working with both the front-end and the back-end, as well as designing and creating complete apps from scratch. My main focus is on constant improvement, and I'm not just in pursuit of a certain job position or a salary figure, but I wish to truly achieve excellence in my vocation.<br>I'm currently open for remote work.</p>
+                <a href="pdf/resume-basic.pdf" target="_blank" rel="noopener noreferrer" class='action-button'>Resume</a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class='content-section' id='skills'>
+          <p class='section__name'>Skills</p>
+          <div class="section__body">
+            <div class="skills__wrapper">
+                <div class="skills__layer" id="frontend">
+                  <p class='skills__item'>HTML</p>
+                  <p class='skills__item'>CSS</p>
+                  <p class='skills__item'>Javascript</p>
+                  <p class='skills__item'>JQuery</p>
+                  <p class='skills__item'>ReactJS</p>
+                  <p class='skills__item'>GatsbyJS</p>
+                  <p class='skills__item'>Redux</p>
+                </div>
+                <div class="skills__layer" id="backend">
+                  <p class='skills__item'>NodeJS</p>
+                  <p class='skills__item'>ExpressJS</p>
+                  <p class='skills__item'>PostgreSQL</p>
+                  <p class='skills__item'>MongoDB</p>
+                  <p class='skills__item'>Mongoose</p>
+                </div>
+                <div class="skills__layer" id="rest">
+                  <p class='skills__item'>HTTP</p>
+                  <p class='skills__item'>Socket.IO</p>
+                  <p class='skills__item'>REST</p>
+                  <p class='skills__item'>GraphQL</p>
+                  <p class='skills__item'>git</p>
+                  <p class='skills__item'>npm</p>
+                  <p class='skills__item'>AJAX</p>
+                </div>
+              <div class="skills__content">
+                <div class="skills__switch">
+                  <button class='skills__option active' id="allskill">All</button>
+                  <button class='skills__option' id="frontskill">Front-end</button>
+                  <button class='skills__option' id="backskill">Back-end</button>
+                  <button class='skills__option' id="otherskill">Other</button>
+                </div>
+                <div class="skills__info">
+                  <h1 class='title'>Complete experience</h1>
+                  <p class='text'>Whether you need an aesthetic and functional user interface, an efficiant web server, or a database to store various information, you've come to the right place. Instead of displaying one long list, skills have been divided into three general areas. Clicking on the links above the title of this article will show more information about each area of skills you may be interested in.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class='content-section' id='projects'>
+          <p class="section__name second">Projects</p>
+          <div class="section__body">
+          <p class='projects__text'>The best way to showcase my work is through these projects</p>
+          <div class="gallery">
+            <div class="gallery__window">
+              <ul class='gallery__list'>
+                <li class='gallery__item'>
+                  <div class="book" id='bchat'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>Mongoose virtuals are used to connect the two models, enabling the server to just populate the desired fields when necessary. JWT signing and calculating the number of days is performed in user model’s toJSON property, allowing it to run when necessary, without cluttering the rest of the code. Password hashing is handled with bcrypt in a pre save function, that runs only if the password was modified. The ProfileLayout component checks the user prop with the currently logged in user’s data, and if they match, it displays the homepage version. The React app uses Context to avoid prop drilling and enable access to the current user anywhere in the app.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Adding profile pictures for users, expanding profile data and adding the ability to edit profiles, adding password protected chatrooms, adding the option to send images and other files</p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://balance-chat.herokuapp.com/' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/balance-chat' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>A simple chat app that arranges users into rooms. Authentication is required, after which, each user can create their own rooms. Any user is free to chat in any room. If you created the room, you can see two additional buttons for editing and deleting the room. You can also visit other users’ profiles.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>Authentication forms</li>
+                            <li class='book__li'>List of rooms with a filter to see only yours</li>
+                            <li class='book__li'>Real time chatting using socket.io</li>
+                            <li class='book__li'>Authentication and CRUD operations using ExpressJS</li>
+                            <li class='book__li'>MongoDB & Mongoose for storing data</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>Parts of the app require both user data and their rooms, but the app is using a non-relational database. Signing JWTs and password hashing shouldn’t clutter the rest of the code. Each user should have a number of days on their profile, extracted from a timestamp. One component should handle the user’s homepage and other users’ profile pages, but differentiate between the two. Current user’s data should be accessible anywhere in the app, without a separate library.</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/bchat.png" alt="BalanceChat">
+                        <h1 class='book__title'>Balance<strong>Chat</strong></h1>
+                        <h5 class='book__subtitle'>ReactJS - CSS - NodeJS - ExpressJS<br>Socket.IO - MongoDB</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='scans'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>A small npm package called clarifai-nodejs-grpc was used, along with the id for the necessary model, to set up the connection. One loop iterates over response outputs, and within each one, another loop iterates over it's regions, pushing any text into one main output array, which gets joined afterwards, with a next line, to avoid conflating text that actually should be separated. The app looks at the current hour, and based on it renders words like “morning”, “evening” etc, while the username is received in the props. There is a small loading animation while the image is being scanned, if an error occurs, it will be displayed, if an invalid link is pasted, it will say so instantly.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Adding the ability to e-mail the converted text, adding more Clarifai models and with them more options, adding proper routing and more pages, adding a counter of converted items </p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://scan-sight.herokuapp.com/' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/scan-sight' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>An app that’s built around Clarifai’s OCR model, which uses AI to transcribe symbols from images and convert them into plain text. Immediately upon conversion, the text can be edited, copied, or pinned to your profile for later use. The fact it’s an API based app sets it apart from other projects listed here, so visitors that aren’t interested in that aspect would probably find other projects more engaging.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>3D authentication forms</li>
+                            <li class='book__li'>Interactive output area where you can modify the text</li>
+                            <li class='book__li'>Overview of pinned items</li>
+                            <li class='book__li'>Node & Express backend connected to Clarifai</li>
+                            <li class='book__li'>PostgreSQL & knex</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>Clarifai models switched to gRPC, and connecting to their API is completely different compared to before (when I built the SmartBrain app and first worked with Clarifai). The AI returns small pockets of text instead of one large document, and the app should display the latter. The home page should display an adequate greeting. The user should know what’s going on at any given point of the process.</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/scans.png" alt="BalanceChat">
+                        <h1 class='book__title'>ScanSight</h1>
+                        <h5 class='book__subtitle'>ReactJS - CSS - NodeJS - ExpressJS<br>PostgreSQL - Clarifai API</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='mjr'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>The data from the contact form gets sent to a PHP file uploaded to the server, which then handles the mailing function. The react-i18next plugin combined with i18next-http-backend enables the site to draw text data straight from the locales folder, and replace it when necessary, without re-rendering. One language button is a link in disguise, which leads to a page that contains no other data, and, as such, won’t show a different language. The content for each page is outsourced to a separate component, which gets inserted into a “Layout” component (which contains the i18next provider) on every page.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Adding the delayed support for the German version, adding a separate page about their machine park and services, adding the ability to order Air Guides automatically</p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://mjralatnica.com' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/mjr-company' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>A static website developed for a company specialized in construction of various tools, moulds and casts. In 2021 it was migrated to GatsbyJS, but since the vast majority of content and design remained the same, the website still states the original year of development, despite using more modern features.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>Interactive photo galleries</li>
+                            <li class='book__li'>Optimized images using gatsby-plugin-image</li>
+                            <li class='book__li'>Switching languages without reloading</li>
+                            <li class='book__li'>A contact form without any third party service</li>
+                            <li class='book__li'>Landing page</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>Users should be able to send an e-mail directly from the site without depending on any third party. The website should be available in several languages without duplicate pages or reloading. One language route should lead to an “Under Construction” page instead of switching anything. All the pages should be surrounded by the i18next provider, despite the lack of access to Gatsby’s page routing and top components</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/mjr.png" alt="MJR Alatnica">
+                        <h1 class='book__title'><strong>MJR</strong> Company</h1>
+                        <h5 class='book__subtitle'>GatsbyJS - GraphQL - CSS - PHP</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='burg'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>BurgerPreview component receives one prop for size and two for seeds, and through them determines whether the burger is currently being built, and conditionally renders the necessary view. Food item page checks the URL for category and item variables, and inserts the category if it’s missing. The app uses reselect and exports custom selectors to avoid loading unnecessary state. JWTs are used and stored in local storage and verified in the backend when necessary. BCrypt is used to hash and securely store passwords. Redirects to the login page from guarded routes pass URLs to it, so after successful authentication you can proceed to the original route.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Turning the orders page into a guarded admin dashboard with all data visible, adding online payment, adding and storing refresh tokens, adding user profile pages</p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://burger-elite.herokuapp.com/' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/burger-elite' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>An example app of an elite fast-food restaurant. The client can order food from the menu, or create their own custom burger. Successfully submitted orders are displayed on the ‘Orders’ page, and while only some information is currently visible in the UI, all the necessary data is stored in the database.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>Interactive visual burger builder</li>
+                            <li class='book__li'>Authentication and guarded routes</li>
+                            <li class='book__li'>Interactive shopping cart</li>
+                            <li class='book__li'>ExpressJS server with outsourced routers</li>
+                            <li class='book__li'>PostgreSQL database with knex</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>The shopping cart needs to display custom burger images. The seeds on the bun should work as a switch, but shouldn’t affect burgers already in the cart. Food item page should use a relative link, but be accessible from different routes. Components shouldn’t load more Redux state than is necessary. User’s data should persist through reloads. The passwords shouldn’t be stored as plain text. After logging in, the user should proceed to where they clicked.</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/burg.png" alt="BurgerElite">
+                        <h1 class='book__title'>Burger<strong>Elite</strong></h1>
+                        <h5 class='book__subtitle'>ReactJS - Redux - CSS - NodeJS <br> ExpressJS - PostgreSQL</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='gazd'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>Two different forms are connected to two different PHP files, making sure the mailing function does not rely on a third party. Just before an order gets sent, the product names are retrieved from a JSON file with identical IDs. The menu component receives a type prop, which drastically alters the look of each menu. The app uses react-router-sitemap-generator for creating a sitemap, and react-snap for pre-rendering content, improving it’s overall SEO. The .htaccess file renders index.html on every route without altering the url, which allows the React app to take over and load the proper page. In case of a route that actually doesn’t exist, the app loads a custom 404 page.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Adding different pages for different product categories, adding the ability to order every product, adding profiles and authentication, adding online payment</p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='https://www.gazdinstvo-kovacevic.rs' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/farmstead-kovacevic' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>A web app developed for a goat farm which produces a wide variety of natural organic agricultural products. Visitors can also order products online, without registration. Due to the rapid expansion of the offer, and with it, frequent updates to the app, some features are developed to suit larger apps than this one currently is.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>Interactive shopping cart</li>
+                            <li class='book__li'>Guarded checkout page</li>
+                            <li class='book__li'>Switching languages without reloading</li>
+                            <li class='book__li'>A contact form without any third party service</li>
+                            <li class='book__li'>Banner with parallax scrolling effect</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>The app should be able to send two types of e-mails. The ordered items should always be named the same, regardless of the language the client chose. The website should have three types of menus, but avoid duplicate components. React apps tend to require an additional push to have good SEO. Manually searching any route except home would not be found due to the way React renders content.</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/gazd.png" alt="Gazdinstvo Kovačević">
+                        <h1 class='book__title'>Farmstead Kovačević</h1>
+                        <h5 class='book__subtitle'>ReactJS - Redux - CSS - PHP</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='bchat'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>Mongoose virtuals are used to connect the two models, enabling the server to just populate the desired fields when necessary. JWT signing and calculating the number of days is performed in user model’s toJSON property, allowing it to run when necessary, without cluttering the rest of the code. Password hashing is handled with bcrypt in a pre save function, that runs only if the password was modified. The ProfileLayout component checks the user prop with the currently logged in user’s data, and if they match, it displays the homepage version. The React app uses Context to avoid prop drilling and enable access to the current user anywhere in the app.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Adding profile pictures for users, expanding profile data and adding the ability to edit profiles, adding password protected chatrooms, adding the option to send images and other files</p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://balance-chat.herokuapp.com/' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/balance-chat' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>A simple chat app that divides users into rooms. Authentication is required, after which, each user can create their own rooms. Any user is free to chat in any room. If you created the room, you can see two additional buttons for editing and deleting the room. You can also visit other users’ profiles.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>Authentication forms</li>
+                            <li class='book__li'>List of rooms with a filter to see only yours</li>
+                            <li class='book__li'>Real time chatting using socket.io</li>
+                            <li class='book__li'>Authentication and CRUD operations using ExpressJS</li>
+                            <li class='book__li'>MongoDB & Mongoose for storing data</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>Parts of the app require both user data and their rooms, but the app is using a non-relational database. Signing JWTs and password hashing shouldn’t clutter the rest of the code. Each user should have a number of days on their profile, extracted from a timestamp. One component should handle the user’s homepage and other users’ profile pages, but differentiate between the two. Current user’s data should be accessible anywhere in the app, without a separate library.</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/bchat.png" alt="BalanceChat">
+                        <h1 class='book__title'>Balance<strong>Chat</strong></h1>
+                        <h5 class='book__subtitle'>ReactJS - CSS - NodeJS - ExpressJS<br>Socket.IO - MongoDB</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='scans'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>A small npm package called clarifai-nodejs-grpc was used, along with the id for the necessary model, to set up the connection. One loop iterates over response outputs, and within each one, another loop iterates over it's regions, pushing any text into one main output array, which gets joined afterwards, with a next line, to avoid conflating text that actually should be separated. The app looks at the current hour, and based on it renders words like “morning”, “evening” etc, while the username is received in the props. There is a small loading animation while the image is being scanned, if an error occurs, it will be displayed, if an invalid link is pasted, it will say so instantly.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Adding the ability to e-mail the converted text, adding more Clarifai models and with them more options, adding proper routing and more pages, adding a counter of converted items </p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://scan-sight.herokuapp.com/' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/scan-sight' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>An app that’s built around Clarifai’s OCR model, which uses AI to transcribe symbols from images and convert them into plain text. Immediately upon conversion, the text can be edited, copied, or pinned to your profile for later use. The fact it’s an API based app sets it apart from other projects listed here, so visitors that aren’t interested in that aspect would probably find other projects more engaging.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>3D authentication forms</li>
+                            <li class='book__li'>Interactive output area where you can modify the text</li>
+                            <li class='book__li'>Overview of pinned items</li>
+                            <li class='book__li'>Node & Express backend connected to Clarifai</li>
+                            <li class='book__li'>PostgreSQL & knex</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>Clarifai models switched to gRPC, and connecting to their API is completely different compared to before (when I built the SmartBrain app and first worked with Clarifai). The AI returns small pockets of text instead of one large document, and the app should display the latter. The home page should display an adequate greeting. The user should know what’s going on at any given point of the process.</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/scans.png" alt="BalanceChat">
+                        <h1 class='book__title'>ScanSight</h1>
+                        <h5 class='book__subtitle'>ReactJS - CSS - NodeJS - ExpressJS<br>PostgreSQL - Clarifai API</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='mjr'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>The data from the contact form gets sent to a PHP file uploaded to the server, which then handles the mailing function. The react-i18next plugin combined with i18next-http-backend enables the site to draw text data straight from the locales folder, and replace it when necessary, without re-rendering. One language button is a link in disguise, which leads to a page that contains no other data, and, as such, won’t show a different language. The content for each page is outsourced to a separate component, which gets inserted into a “Layout” component (which contains the i18next provider) on every page.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Adding the delayed support for the German version, adding a separate page about their machine park and services, adding the ability to order Air Guides automatically</p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://mjralatnica.com' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/mjr-company' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>A static website developed for a company specialized in construction of various tools, moulds and casts. In 2021 it was migrated to GatsbyJS, but since the vast majority of the content and the design remained the same, the website still states the original year of development, despite using more modern features.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>Interactive photo galleries</li>
+                            <li class='book__li'>Optimized images using gatsby-plugin-image</li>
+                            <li class='book__li'>Switching languages without reloading</li>
+                            <li class='book__li'>A contact form without any third party service</li>
+                            <li class='book__li'>Landing page</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>Users should be able to send an e-mail directly from the site without depending on any third party. The website should be available in several languages without duplicate pages or reloading. One language route should lead to an “Under Construction” page instead of switching anything. All the pages should be surrounded by the i18next provider, despite the lack of access to Gatsby’s page routing and top components</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/mjr.png" alt="MJR Alatnica">
+                        <h1 class='book__title'><strong>MJR</strong> Company</h1>
+                        <h5 class='book__subtitle'>GatsbyJS - GraphQL - CSS - PHP</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class='gallery__item'>
+                  <div class="book" id='burg'>
+                    <div class="book__back">
+                      <h4 class='book__section'>Solutions</h4>
+                      <p class='book__text'>BurgerPreview component receives one prop for size and two for seeds, and through them determines whether the burger is currently being built, and conditionally renders the necessary view. Food item page checks the URL for category and item variables, and inserts the category if it’s missing. The app uses reselect and exports custom selectors to avoid loading unnecessary state. JWTs are used and stored in local storage and verified in the backend when necessary. BCrypt is used to hash and securely store passwords. Redirects from guarded routes pass URLs to the authentication page, so after successful authentication you can proceed to the original route.</p>
+                      <h4 class='book__section'>Potential improvements</h4>
+                      <p class='book__text'>Turning the orders page into a guarded admin dashboard with all data visible, adding online payment, adding and storing refresh tokens, adding user profile pages</p>
+                      <div class="book__buttons">
+                        <a class='book__button' href='http://burger-elite.herokuapp.com/' target='_blank' rel='noopener noreferrer'>Live</a>
+                        <a class='book__button' href='https://github.com/Thorn29/burger-elite' target='_blank' rel='noopener noreferrer'>Code</a>
+                      </div>
+                      <button class='book__close'>Close</button>
+                    </div>
+                    <div class="book__front">
+                      <figure class='book__face back'>
+                        <div class="book__back-content">
+                          <h4 class='book__section'>Overview</h4>
+                          <p class='book__text'>An example app of an elite fast-food restaurant. The client can order food from the menu, or create their own custom burger. The successfully submitted orders are displayed on the ‘Orders’ page, and while only some information is currently visible in the UI, all the data gets stored in the database and can be passed around when necessary.</p>
+                          <h4 class='book__section'>Characteristic features</h4>
+                          <ul class='book__list'>
+                            <li class='book__li'>Interactive visual burger builder</li>
+                            <li class='book__li'>Authentication and guarded routes</li>
+                            <li class='book__li'>Interactive shopping cart</li>
+                            <li class='book__li'>ExpressJS server with outsourced routers</li>
+                            <li class='book__li'>PostgreSQL database with knex</li>
+                          </ul>
+                          <h4 class='book__section'>Challenges</h4>
+                          <p class='book__text'>The shopping cart needs to display custom burger images. The seeds on the bun should work as a switch, but shouldn’t affect burgers already in the cart. Food item page should use a relative link, but be accessible from different routes. Components shouldn’t load more Redux state than is necessary. User’s data should persist through reloads. The passwords shouldn’t be stored as plain text. After logging in, the user should proceed to where they clicked.</p>
+                        </div>
+                      </figure>
+                      <figure class='book__face front'>
+                        <img class='book__image' src="img/burg.png" alt="BurgerElite">
+                        <h1 class='book__title'>Burger<strong>Elite</strong></h1>
+                        <h5 class='book__subtitle'>ReactJS - Redux - CSS - NodeJS <br> ExpressJS - PostgreSQL</h5>
+                        <button class='book__open'>Read</button>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class='gallery__button' id='prev'>&#10094;</button>
+            <button class='gallery__button' id='next'>&#10095;</button>
+          </div>
+        </div>
+        </section>
+        <div id="contact">
+          <div class="contact__logo">
+            <img src="img/footerlogo.png" alt="Thorn29">
+          </div>
+          <a href="#" class='contact__email'>jthorn29@protonmail.com</a>
+          <div class="contact__buttons">
+            <a href="https://www.linkedin.com/in/marko-mutic/" target="_blank" rel="noopener noreferrer" class='contact__button'>LinkedIn</a>
+            <a href="https://github.com/Thorn29" target="_blank" rel="noopener noreferrer" class='contact__button'>GitHub</a>
+          </div>
+          <div class="contact__chrome"></div>
+        </div>
+    </div>
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script type='text/javascript' src='js/master.js'></script>
+  </body>
+</html>

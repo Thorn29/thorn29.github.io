@@ -1,4 +1,4 @@
-$(window).on('load', () => {
+$(window).ready(() => {
   $('.backdrop').css('display', 'none');
 
 

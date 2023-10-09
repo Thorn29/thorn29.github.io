@@ -284,6 +284,7 @@ section {
   color: rgba(255,255,255,.7);
   line-height: 1.5rem;
   margin: 1.5rem 0 2rem;
+  text-shadow: #000 3px 3px 6px;
 }
 
 .text__link {

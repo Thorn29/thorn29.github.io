@@ -565,15 +565,12 @@ section {
   top: 0;
   left: 0;
   backface-visibility: hidden;
-}
-
-.book__face.front {
-  background: purple;
+  -moz-backface-visibility: hidden;
+  transform: rotateX(0deg);
 }
 
 .book__face.back {
   transform: rotateY(180deg);
-  background: fuchsia;
 }
 
 .gallery__item.active.open .book {
@@ -661,6 +658,13 @@ section {
   top: 0;
   left: 0;
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 92%;
+}
+
+.book__text-wrapper {
+  flex: 1;
 }
 
 .book__section {
@@ -674,6 +678,7 @@ section {
 .book__text {
   font-family: var(--font2);
   font-size: 13px;
+  line-height: 13px;
 }
 
 .book__list {
@@ -939,6 +944,39 @@ section {
 #gazd .book__button {
   background: #089E14;
   color: black;
+}
+
+#yfix, #yfix .book__face.front, #yfix .book__face.back {
+  background: #151515;
+}
+
+#yfix .book__title {
+  color: white;
+}
+
+#yfix .book__title strong {
+  color: #e95321;
+}
+
+#yfix .book__section {
+  color: #e95321;
+}
+
+#yfix .book__button {
+  background: #e95321;
+  color: black;
+}
+
+#yfix .book__open, #yfix .book__close {
+  color: #999;
+}
+
+#yfix .book__text {
+  color: white;
+}
+
+#yfix .book__list {
+  color: white;
 }
 
 #burg, #burg .book__face.front, #burg .book__face.back {

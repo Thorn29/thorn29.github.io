@@ -14,22 +14,22 @@ $('.menu__link').click((e) => {
 
 const allSkills = {
   title: 'Complete experience',
-  text: "Whether you need an aesthetic and functional user interface, an efficient web server with a database, or you just have a vague idea and need an entire project, you've come to the right place. Instead of displaying one long list, skills have been divided into three general areas. Clicking on the links above the title of this article will show more information about each general area of skills you may be interested in."
+  text: "Whether you need an aesthetic and functional user interface, an efficient web server with a database, or you just have a vague idea and need an entire project, you've come to the right place. Instead of displaying one long list, skills have been divided into three general areas. Clicking on the links above the title of this article will show more information about each one of them."
 };
 
 const frontSkills = {
   title: 'Presentation layer',
-  text: "The work done over the years ranged from building simple static websites using GatsbyJS or HTML & CSS combined with vanilla JS/JQuery, to interactive modern SPAs and PWAs built with React and it's many features, packages and popular pairings (Redux, Typescript, NextJS, etc.). The tasks included connecting the apps to a backend, optimizing their performance, writing unit tests, using sitemaps and pre-rendering to improve SEO, using selectors to optimize Redux state slices, using i18next for multilingual support and many other things. React development has been my main passion and area of focus for several years already."
+  text: "The work done over the years ranged from building simple static websites using GatsbyJS or HTML & CSS combined with vanilla JS/JQuery, to building full blown interactive SPAs and PWAs built with React and it's many features, packages and popular pairings (Redux, Typescript, NextJS, etc.). On top of building and designing it, I was often in charge of connecting the apps to a backend, optimizing their performance, writing unit tests, improving SEO, deploying and maintaining, centralizing and optimizing state, localization and internationalization and many other things. React development has been my main passion and area of focus for years."
 };
 
 const backSkills = {
   title: 'Data access layer',
-  text: "NodeJS combined with Express is the main approach I use for building a server, while the database it connects to can be either relational or non-relational, depending on the specific needs of a certain project. The most common choice for a relational database is PostgreSQL, while a non-relational approach usually tends to be MongoDB (local, or in some instances, MongoAtlas), which I use with Mongoose and it's schemas almost exclusively. An important segment of my servers is also data security, which includes password hashing, route guarding, implementing strict boundaries to prevent storing invalid data and so on."
+  text: "NodeJS combined with Express is the main approach I use for building a server, while the database can be either relational or non-relational, depending on the specific needs of the project. The most common choice for a relational database was PostgreSQL, while a non-relational approach usually meant using MongoDB (local, or in some instances, MongoAtlas), which I use with Mongoose and it's schemas almost exclusively. An important segment of my servers is also data security, which includes password hashing, route guarding, implementing strict boundaries to prevent storing invalid data and so on."
 };
 
 const otherSkills = {
   title: 'Bringing it together',
-  text: "Other than just being familiar with front-end and back-end technologies, one also needs to have the skills to combine all the elements into a fully rounded app. In my case, those currently include knowledge of HTTP and AJAX requests, both RESTful and non-RESTful approaches to performing CRUD operations, WebSockets with Socket.IO for implementing duplex communication, GraphQL to easily work with complex systems, Docker for building containers, Redis for caching and/or storing data, different Amazon Web Services such as Lambda and S3 for improving the backend etc."
+  text: "Other than just being familiar with various front-end and back-end technologies, one also needs to have the skills to combine all the elements into a full well-rounded app. In my case, those currently include knowledge of HTTP and AJAX requests, both RESTful and non-RESTful approaches to performing CRUD operations, WebSockets with Socket.IO for implementing duplex communication, GraphQL to easily work with complex systems, Docker for building containers, Redis for caching and/or storing data, different Amazon Web Services such as Lambda and S3 for improving the backend etc."
 };
 
 $('.skills__option').click((e) => {

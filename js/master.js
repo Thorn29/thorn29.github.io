@@ -19,17 +19,17 @@ const allSkills = {
 
 const frontSkills = {
   title: 'Presentation layer',
-  text: "The work done over the years ranged from building simple static websites using GatsbyJS or HTML & CSS combined with vanilla JS/JQuery, to building full blown interactive SPAs and PWAs built with React and it's many features, packages and popular pairings (Redux, Typescript, NextJS, etc.). On top of building and designing it, I was often in charge of connecting the apps to a backend, optimizing their performance, writing unit tests, improving SEO, deploying and maintaining, centralizing and optimizing state, localization and internationalization and many other things. React development has been my main passion and area of focus for years."
+  text: "The work done over the years ranged from building simple static websites to full blown interactive Single Page Applications and Progressive Web Apps, as well as designing/optimizing the data flow, connecting the backend, optimizing performance and accessibility, writing tests, improving SEO, deploying and maintenance, adding international support and many other things. React and the React ecosystem have been my main passion and area of focus throughout my career."
 };
 
 const backSkills = {
   title: 'Data access layer',
-  text: "NodeJS combined with Express is the main approach I use for building a server, while the database can be either relational or non-relational, depending on the specific needs of the project. The most common choice for a relational database was PostgreSQL, while a non-relational approach usually meant using MongoDB (local, or in some instances, MongoAtlas), which I use with Mongoose and it's schemas almost exclusively. An important segment of my servers is also data security, which includes password hashing, route guarding, implementing strict boundaries to prevent storing invalid data and so on."
+  text: "Backend work included anything from designing and building servers from scratch, designing and building databases - both relational and non-relational, updating and creating schemas, adding custom middleware, password hashing, authentication, and many other things. Coming from a JS background, I do most of my backend work using Node and Express, however I am interested in learning and using other backend technologies as well, so the list may expand in the future. "
 };
 
 const otherSkills = {
   title: 'Bringing it together',
-  text: "Other than just being familiar with various front-end and back-end technologies, one also needs to have the skills to combine all the elements into a full well-rounded app. In my case, those currently include knowledge of HTTP and AJAX requests, both RESTful and non-RESTful approaches to performing CRUD operations, WebSockets with Socket.IO for implementing duplex communication, GraphQL to easily work with complex systems, Docker for building containers, Redis for caching and/or storing data, different Amazon Web Services such as Lambda and S3 for improving the backend etc."
+  text: "Knowledge of frontend and backend technologies isn't enough for one to be able to call himself a full stack developer, sometimes it's just as important to know how to combine all the elements into a full well-rounded app. In my case, that includes experience with both RESTful and non-RESTful architecture, WebSockets with Socket.IO, GraphQL, Docker, Redis, and so on. Switching between different responsibilities throughout my career gave me a habit of always keeping the big picture in mind."
 };
 
 $('.skills__option').click((e) => {
